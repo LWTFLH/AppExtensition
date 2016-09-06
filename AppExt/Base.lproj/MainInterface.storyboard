@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呵呵呵" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3q-Ip-RlF">
+                                <rect key="frame" x="25" y="20" width="68" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="Ln3-ST-JZl"/>
+                                    <constraint firstAttribute="height" constant="50" id="gBH-Nm-eAq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iLr-wd-vhC">
+                                <rect key="frame" x="196" y="20" width="108" height="67"/>
+                                <color key="backgroundColor" red="0.79359928698270732" green="0.13796732292142685" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="iLr-wd-vhC" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="84R-4W-R3n"/>
+                            <constraint firstItem="o3q-Ip-RlF" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" id="AX8-31-teL"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="iLr-wd-vhC" secondAttribute="bottom" constant="13" id="Bof-GH-38X"/>
+                            <constraint firstItem="iLr-wd-vhC" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" id="hrp-ld-vjR"/>
+                            <constraint firstItem="o3q-Ip-RlF" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="9" id="mHS-RU-bKM"/>
+                            <constraint firstItem="iLr-wd-vhC" firstAttribute="leading" secondItem="o3q-Ip-RlF" secondAttribute="trailing" constant="103" id="uUr-4f-B2J"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="100"/>
+                    <connections>
+                        <outlet property="testWidget" destination="o3q-Ip-RlF" id="KDr-cX-bd4"/>
+                        <outlet property="widetImage" destination="iLr-wd-vhC" id="gNf-Pj-3BU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="233"/>
+        </scene>
+    </scenes>
+</document>

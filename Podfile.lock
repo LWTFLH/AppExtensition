@@ -1,0 +1,12 @@
+PODS:
+  - QHSpeechSynthesizerQueue (1.1.1)
+
+DEPENDENCIES:
+  - QHSpeechSynthesizerQueue
+
+SPEC CHECKSUMS:
+  QHSpeechSynthesizerQueue: f3561ad320304cfe75c6bb5a7aa1ed4dbe25aa9a
+
+PODFILE CHECKSUM: aa8f467e2cfec1021cb769af1e1ada1a5073e78f
+
+COCOAPODS: 1.0.1
